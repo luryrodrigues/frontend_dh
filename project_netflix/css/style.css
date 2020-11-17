@@ -1,8 +1,9 @@
 
 body {
   background-image: url("/img/netflix-bg.jpg");
-  background-size: inherit;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0.2);
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -31,6 +32,7 @@ header img {
   border-radius: 1%;
   box-sizing: border-box;
 }
+
 
 #entrar h1 {
 
@@ -67,4 +69,18 @@ header img {
   font-family: Helvetica, Arial, sans-serif;
   color: white;
   font-size: 100%;
+}
+
+#remember {
+  color: lightgray;
+  font-size: 80%;
+}
+
+input[type=checkbox] {
+  margin-left: -122px;
+  text-align: left;
+  -webkit-transform: scale(0.3);
+  transform: scale(0.3);
+  padding-right: 0;
+  color: gray;
 }
