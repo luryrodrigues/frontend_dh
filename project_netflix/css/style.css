@@ -1,0 +1,70 @@
+
+body {
+  background-image: url("/img/netflix-bg.jpg");
+  background-size: inherit;
+  background-repeat: no-repeat;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  width: 17%;
+}
+
+header img {
+  width: 167px;
+  margin-left: 24px;
+  margin-top: 15px;
+  opacity: 1;
+}
+
+#entrar {
+  background-color: rgba(0,0,0,0.85);
+  width: 34%;
+  margin: auto;
+  margin-top: 8px;
+  padding-top: 2.7%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+  padding-right: 10%;
+  border-radius: 1%;
+  box-sizing: border-box;
+}
+
+#entrar h1 {
+
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  font-size: 200%;
+}
+
+#entrar form {
+
+}
+
+#entrar form input {
+  width: 258px;
+  height: 45px;
+  background-color: rgb(48, 46, 46);
+  border: none;
+  border-radius: 4px;
+  color: lightgray;
+  font-size: 100%;
+  text-align: left;
+  padding-left: 10%;
+}
+
+#entrar form button {
+  width: 280px;
+  height: 45px;
+  background-color: rgb(224, 31, 31);
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 100%;
+}
