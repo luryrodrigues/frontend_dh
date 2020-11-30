@@ -23,31 +23,36 @@ let profissao = selectId('profissao');
 let errorListUl = document.querySelector("#error-list ul");
 let errorList = selectId('error-list');
 
-getInputValues(nome)
+getInputValues(nome);
 
-getInputValues(idade)
+getInputValues(idade);
 
-getInputValues(profissao)
+getInputValues(profissao);
+
 
 form.addEventListener("submit", function(ev){
   
   errorListUl.innerHTML = ""
-  
+
+  let confirmacao = confirm('Seus dados estão corretos?\nNome: ' + nome.value + '\nIdade: ' + idade.value + '\nProfissão: ' + profissao.value)
+  if (confirmacao === true) {
+    alert('Não será possível alterar seus dados!')
+  };
+
   if(emptyInput(nome)) {
     errorMessage('Campo <b>nome</b> não preenchido;')
-  }
+  };
 
   if(emptyInput(idade)) {
     errorMessage('Campo <b>idade</b> não preenchido;')
-  }
+  };
 
   if(emptyInput(profissao)) {
     errorMessage('Campo <b>profissão</b> não preenchido;')
-  }
+  };
 
   if (errorListUl.querySelectorAll('li').length > 0) {
     ev.preventDefault();
-    errorList.hidden = ''
-  }
-
+    errorList.hidden = '';
+  };
 });
