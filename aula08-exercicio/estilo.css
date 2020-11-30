@@ -1,3 +1,7 @@
 #corpo {
   background-color: aliceblue;
 }
+
+.form-control {
+  width: 20rem;
+}
